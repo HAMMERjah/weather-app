@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>
+			Weather App
+		</title> 
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Latest compiled and minified CSS from Bootstrap-->
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<link rel='stylesheet' href="E:\Code Projects\Weather App\stylesheet.css">
+    <link rel='stylesheet' href="https://fonts.googleapis.com/css?family=Sniglet:800">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik+Mono+One" >
+    <link rel= 'stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css'>
+		<!-- jQuery library, AngularJS min & Bootstrap compiled jS-->
+		<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js'></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	</head>
+
+<body ng-app='weatherApp'>
+  <div class='container' ng-controller='MainCtrl'>
+    <div class='row'>
+      <header class='col-xs-12 text-center'>
+        <h1>
+          WHATS THE WEATHER IN<BR/>
+          <span id='loc'>{{Data.city | uppercase}}</span>?
+        </h1>
+      </header>
+      <br/>
+      <div class='col-xs-12 text-center'>
+        <p id='temp'> 
+          {{Data.temp}}&#176;{{Data.unit}}
+        </p>
+        <p><span class='bold'>{{Data.des}}<span></p>
+        <p> 
+          <span class='ul'>Humidity</span>: <span class='bold'>{{Data.humid}}%</span>
+        </p>
+        <p>
+          <span class='ul'>Temperature range</span>:  
+          <br/>&nbsp;&nbsp;<i class='fa fa-arrow-up'></i>High: <span class='bold'>{{Data.high}}&#176; {{Data.unit}}</span>
+          <br/><i class='fa fa-arrow-down'></i>Low: <span class='bold'>{{Data.low}}&#176; {{Data.unit}}</span>  
+        </p>
+      </div>
+    <div>
+    <footer class='footer text-center'>
+      <i class='fa fa-code'></i> <a href='http://codepen.io/HAMMERjah/'>coded by Jared Hammer</a>
+    </footer>
+  </div>
+</body>
+
+<script src="E:\Code Projects\Weather App\app.js"></script>
+
+</html>
