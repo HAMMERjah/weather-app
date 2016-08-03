@@ -1,0 +1,81 @@
+.container{
+  margin-top: 3em;
+  background-image:url('http://res.cloudinary.com/hammerjah/image/upload/v1469984959/sky-15332-svg_htjuje.svg');
+  border:solid .7em black;
+  border-radius:3em;
+  padding-bottom:3em;
+  width:25%;
+}
+h1{
+  border:solid black;
+  border-radius:3em;
+  font-family: 'Sniglet', cursive;
+  color:#66c2ff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: #66c2ff;
+  -webkit-text-stroke: .07em #000;
+  background: rgba(0,0,0,0.6);
+}
+#temp{
+  font-size:4.5em;
+  font-family: 'Rubik Mono One', sans-serif;
+}
+#des{
+  font-weight:bold;
+}
+p{
+  font-size:2em;
+}
+.bold{
+  font-weight:bold;
+}
+.ul{
+  text-decoration:underline;
+}
+footer{
+	position:relative;
+	bottom:-2.5em;
+}
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+/* Styles */
+  .container{
+  margin-top:0;
+  background-image:url('http://res.cloudinary.com/hammerjah/image/upload/v1469984959/sky-15332-svg_htjuje.svg');
+  border:solid .7em black;
+  border-radius:3em;
+  padding-bottom:3em;
+  width:100%;
+  }
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+/* Styles */
+  .container{
+  margin-top:0;
+  background-image:url('http://res.cloudinary.com/hammerjah/image/upload/v1469984959/sky-15332-svg_htjuje.svg');
+  border:solid .7em black;
+  border-radius:3em;
+  padding-bottom:3em;
+  width:100%;
+  }
+}
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+/* Styles */
+  .container{
+  margin-top:0;
+  background-image:url('http://res.cloudinary.com/hammerjah/image/upload/v1469984959/sky-15332-svg_htjuje.svg');
+  border:solid .7em black;
+  border-radius:3em;
+  padding-bottom:3em;
+  width:100%;
+  }
+}
